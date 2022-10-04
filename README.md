@@ -40,7 +40,7 @@ port install gtk-theme-switch
 
 By clicking on **preview** you should see the following window : 
 
-[theme preview](images/theme_preview.png)
+![theme preview](images/theme_preview.png)
 
 ## Build and run application
 
