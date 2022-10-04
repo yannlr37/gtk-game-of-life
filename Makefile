@@ -129,30 +129,6 @@ GameOfLife/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/build
 .PHONY : GameOfLife/fast
 
-button_callbacks.o: button_callbacks.c.o
-.PHONY : button_callbacks.o
-
-# target to build an object file
-button_callbacks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/button_callbacks.c.o
-.PHONY : button_callbacks.c.o
-
-button_callbacks.i: button_callbacks.c.i
-.PHONY : button_callbacks.i
-
-# target to preprocess a source file
-button_callbacks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/button_callbacks.c.i
-.PHONY : button_callbacks.c.i
-
-button_callbacks.s: button_callbacks.c.s
-.PHONY : button_callbacks.s
-
-# target to generate assembly for a file
-button_callbacks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/button_callbacks.c.s
-.PHONY : button_callbacks.c.s
-
 main.o: main.c.o
 .PHONY : main.o
 
@@ -177,6 +153,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/main.c.s
 .PHONY : main.c.s
 
+src/button_callbacks.o: src/button_callbacks.c.o
+.PHONY : src/button_callbacks.o
+
+# target to build an object file
+src/button_callbacks.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/button_callbacks.c.o
+.PHONY : src/button_callbacks.c.o
+
+src/button_callbacks.i: src/button_callbacks.c.i
+.PHONY : src/button_callbacks.i
+
+# target to preprocess a source file
+src/button_callbacks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/button_callbacks.c.i
+.PHONY : src/button_callbacks.c.i
+
+src/button_callbacks.s: src/button_callbacks.c.s
+.PHONY : src/button_callbacks.s
+
+# target to generate assembly for a file
+src/button_callbacks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/button_callbacks.c.s
+.PHONY : src/button_callbacks.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... GameOfLife"
-	@echo "... button_callbacks.o"
-	@echo "... button_callbacks.i"
-	@echo "... button_callbacks.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/button_callbacks.o"
+	@echo "... src/button_callbacks.i"
+	@echo "... src/button_callbacks.s"
 .PHONY : help
 
 

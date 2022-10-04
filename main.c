@@ -1,6 +1,6 @@
 #include <gtk/gtk.h>
-#include "style.h"
-#include "button_callbacks.h"
+#include "src/style.h"
+#include "src/button_callbacks.h"
 
 GtkWidget *sd_make_button_actions()
 {

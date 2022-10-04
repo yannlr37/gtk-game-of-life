@@ -11,8 +11,8 @@ link_directories( ${GTK_LIBRARY_DIRS} )
 add_definitions( ${GTK_CFLAGS_OTHER} )
 
 file(GLOB all_SRCS
-	"${PROJECT_SOURCE_DIR}/*.h"
-	"${PROJECT_SOURCE_DIR}/*.c"
+	"${PROJECT_SOURCE_DIR}/src/*.h"
+	"${PROJECT_SOURCE_DIR}/src/*.c"
 )
 
 add_executable( GameOfLife main.c ${all_SRCS} )

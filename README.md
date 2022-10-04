@@ -1,10 +1,10 @@
 # Game of Life
 
 This is a personal project written in C. I just wanted to use GTK to create GUI for desktop apps.
-As I have on old version of MacOsX, I cannot use latest version of GTK and related tools.
+As I have an old version of MacOsX, I cannot use latest version of GTK and its related tools.
 I decided to use GTK2 (with Quartz engine to have a look and feel of Apple Aqua Interface).
 
-This app is a C version of the Game Of Life. The only purpose it have is for learning GTK and C programming.
+This app is a C version of the Game Of Life. The only purpose it has is for learning GTK and C programming.
 
 ## Installation on Mac OS X 10.9.5
 
@@ -51,3 +51,7 @@ cmake .
 make
 ./GameOfLife
 ```
+
+For now, game look like this : 
+
+![theme preview](images/game_preview.png)
