@@ -1,6 +1,7 @@
 #include <gtk/gtk.h>
 #include "src/style.h"
 #include "src/button_callbacks.h"
+#include "src/cell.h"
 
 GtkWidget *sd_make_icon_button(gchar *iconFilename)
 {
@@ -101,8 +102,26 @@ GtkWidget *sd_make_game_grid()
 
 	for (int i=0; i<GRID_SIZE; i++) {
 		for (int j=0; j<GRID_SIZE; j++) {
-			cells[i][j] = gtk_button_new_with_label("Cell");	
-			gtk_table_attach_defaults(grid, cells[i][j], 0+i, 1+i, 0+j, 1+j);		
+			Cell cell;
+			cell.label = "Cell";
+			cell.state = FALSE;
+			cell.row = 0+j;
+			cell.col = 0+i;
+			cells[i][j] = gtk_button_new_with_label(cell.label);	
+			g_signal_connect (
+				G_OBJECT (cells[i][j]), 
+				"button_press_event", 
+				G_CALLBACK (displayState), 
+				(gpointer) cell.state
+			);
+			gtk_table_attach_defaults(
+				grid, 
+				cells[i][j], 
+				cell.col, 
+				cell.col + 1, 
+				cell.row, 
+				cell.row + 1
+			);
 		}	
 	}
 	
@@ -120,7 +139,7 @@ GtkWidget *sd_init_main_window()
 	window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
 	gtk_window_set_title(GTK_WINDOW(window), "Game of Life");
 	gtk_window_set_default_size(GTK_WINDOW(window), 500, 0);
-	//gtk_window_set_resizable(window, FALSE);
+	gtk_window_set_resizable(window, FALSE);
 	gtk_container_set_border_width(GTK_CONTAINER(window), MIN_BORDER_WIDTH);
 
 	return window;
@@ -131,6 +150,7 @@ int main (int argc, char *argv[])
 	GtkWidget *window;
 	GtkWidget *grid;
 	GtkWidget *valign;
+	GtkWidget *separator;
 	GtkWidget *buttons;
 
 	gtk_init(&argc, &argv);
@@ -139,8 +159,11 @@ int main (int argc, char *argv[])
 
 	valign = gtk_vbox_new(FALSE, 4);
 
+	separator = gtk_hseparator_new();
+
 	grid = sd_make_game_grid();
 	gtk_container_add(GTK_CONTAINER(valign), grid);
+	gtk_container_add(GTK_CONTAINER(valign), separator);
 
 	buttons = sd_make_button_actions();
 	gtk_container_add(GTK_CONTAINER(valign), buttons);

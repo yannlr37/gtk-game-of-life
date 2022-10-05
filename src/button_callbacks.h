@@ -9,4 +9,6 @@ void stopGame(GtkWidget *widget, GdkEventButton *event, gpointer data );
 
 void resetGame(GtkWidget *widget, GdkEventButton *event, gpointer data );
 
+void displayState(GtkWidget *widget, GdkEventButton *event, gpointer data );
+
 #endif
