@@ -129,6 +129,30 @@ GameOfLife/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/build
 .PHONY : GameOfLife/fast
 
+core/buttons.o: core/buttons.c.o
+.PHONY : core/buttons.o
+
+# target to build an object file
+core/buttons.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/core/buttons.c.o
+.PHONY : core/buttons.c.o
+
+core/buttons.i: core/buttons.c.i
+.PHONY : core/buttons.i
+
+# target to preprocess a source file
+core/buttons.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/core/buttons.c.i
+.PHONY : core/buttons.c.i
+
+core/buttons.s: core/buttons.c.s
+.PHONY : core/buttons.s
+
+# target to generate assembly for a file
+core/buttons.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/core/buttons.c.s
+.PHONY : core/buttons.c.s
+
 main.o: main.c.o
 .PHONY : main.o
 
@@ -153,29 +177,101 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/main.c.s
 .PHONY : main.c.s
 
-src/button_callbacks.o: src/button_callbacks.c.o
-.PHONY : src/button_callbacks.o
+src/frontend/application.o: src/frontend/application.c.o
+.PHONY : src/frontend/application.o
 
 # target to build an object file
-src/button_callbacks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/button_callbacks.c.o
-.PHONY : src/button_callbacks.c.o
+src/frontend/application.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/frontend/application.c.o
+.PHONY : src/frontend/application.c.o
 
-src/button_callbacks.i: src/button_callbacks.c.i
-.PHONY : src/button_callbacks.i
+src/frontend/application.i: src/frontend/application.c.i
+.PHONY : src/frontend/application.i
 
 # target to preprocess a source file
-src/button_callbacks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/button_callbacks.c.i
-.PHONY : src/button_callbacks.c.i
+src/frontend/application.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/frontend/application.c.i
+.PHONY : src/frontend/application.c.i
 
-src/button_callbacks.s: src/button_callbacks.c.s
-.PHONY : src/button_callbacks.s
+src/frontend/application.s: src/frontend/application.c.s
+.PHONY : src/frontend/application.s
 
 # target to generate assembly for a file
-src/button_callbacks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/button_callbacks.c.s
-.PHONY : src/button_callbacks.c.s
+src/frontend/application.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/frontend/application.c.s
+.PHONY : src/frontend/application.c.s
+
+src/frontend/button_bar.o: src/frontend/button_bar.c.o
+.PHONY : src/frontend/button_bar.o
+
+# target to build an object file
+src/frontend/button_bar.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/frontend/button_bar.c.o
+.PHONY : src/frontend/button_bar.c.o
+
+src/frontend/button_bar.i: src/frontend/button_bar.c.i
+.PHONY : src/frontend/button_bar.i
+
+# target to preprocess a source file
+src/frontend/button_bar.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/frontend/button_bar.c.i
+.PHONY : src/frontend/button_bar.c.i
+
+src/frontend/button_bar.s: src/frontend/button_bar.c.s
+.PHONY : src/frontend/button_bar.s
+
+# target to generate assembly for a file
+src/frontend/button_bar.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/frontend/button_bar.c.s
+.PHONY : src/frontend/button_bar.c.s
+
+src/frontend/button_callbacks.o: src/frontend/button_callbacks.c.o
+.PHONY : src/frontend/button_callbacks.o
+
+# target to build an object file
+src/frontend/button_callbacks.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/frontend/button_callbacks.c.o
+.PHONY : src/frontend/button_callbacks.c.o
+
+src/frontend/button_callbacks.i: src/frontend/button_callbacks.c.i
+.PHONY : src/frontend/button_callbacks.i
+
+# target to preprocess a source file
+src/frontend/button_callbacks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/frontend/button_callbacks.c.i
+.PHONY : src/frontend/button_callbacks.c.i
+
+src/frontend/button_callbacks.s: src/frontend/button_callbacks.c.s
+.PHONY : src/frontend/button_callbacks.s
+
+# target to generate assembly for a file
+src/frontend/button_callbacks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/frontend/button_callbacks.c.s
+.PHONY : src/frontend/button_callbacks.c.s
+
+src/frontend/main_window.o: src/frontend/main_window.c.o
+.PHONY : src/frontend/main_window.o
+
+# target to build an object file
+src/frontend/main_window.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/frontend/main_window.c.o
+.PHONY : src/frontend/main_window.c.o
+
+src/frontend/main_window.i: src/frontend/main_window.c.i
+.PHONY : src/frontend/main_window.i
+
+# target to preprocess a source file
+src/frontend/main_window.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/frontend/main_window.c.i
+.PHONY : src/frontend/main_window.c.i
+
+src/frontend/main_window.s: src/frontend/main_window.c.s
+.PHONY : src/frontend/main_window.s
+
+# target to generate assembly for a file
+src/frontend/main_window.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/frontend/main_window.c.s
+.PHONY : src/frontend/main_window.c.s
 
 # Help Target
 help:
@@ -186,12 +282,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... GameOfLife"
+	@echo "... core/buttons.o"
+	@echo "... core/buttons.i"
+	@echo "... core/buttons.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/button_callbacks.o"
-	@echo "... src/button_callbacks.i"
-	@echo "... src/button_callbacks.s"
+	@echo "... src/frontend/application.o"
+	@echo "... src/frontend/application.i"
+	@echo "... src/frontend/application.s"
+	@echo "... src/frontend/button_bar.o"
+	@echo "... src/frontend/button_bar.i"
+	@echo "... src/frontend/button_bar.s"
+	@echo "... src/frontend/button_callbacks.o"
+	@echo "... src/frontend/button_callbacks.i"
+	@echo "... src/frontend/button_callbacks.s"
+	@echo "... src/frontend/main_window.o"
+	@echo "... src/frontend/main_window.i"
+	@echo "... src/frontend/main_window.s"
 .PHONY : help
 
 

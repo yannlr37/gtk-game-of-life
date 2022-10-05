@@ -1,4 +1,3 @@
-#include <gtk/gtk.h>
 #include "button_callbacks.h"
 
 void startGame(GtkWidget *widget, GdkEventButton *event, gpointer data )

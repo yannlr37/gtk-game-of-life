@@ -11,6 +11,10 @@ link_directories( ${GTK_LIBRARY_DIRS} )
 add_definitions( ${GTK_CFLAGS_OTHER} )
 
 file(GLOB all_SRCS
+	"${PROJECT_SOURCE_DIR}/core/*.h"
+	"${PROJECT_SOURCE_DIR}/core/*.c"
+	"${PROJECT_SOURCE_DIR}/src/frontend/*.h"
+	"${PROJECT_SOURCE_DIR}/src/frontend/*.c"
 	"${PROJECT_SOURCE_DIR}/src/*.h"
 	"${PROJECT_SOURCE_DIR}/src/*.c"
 )
